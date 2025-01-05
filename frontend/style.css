@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form input, form select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #28a745;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+#leads, #interactions {
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fefefe;
+    border-radius: 5px;
+}
+
+/* Style for the Interaction Form */
+/* Style for the Interaction Form */
+#logInteractionForm {
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+#logInteractionForm input,
+#logInteractionForm textarea,
+#logInteractionForm button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#logInteractionForm input[type="datetime-local"],
+#logInteractionForm input[type="text"],
+#logInteractionForm textarea {
+    background-color: #fff;
+}
+
+#logInteractionForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logInteractionForm button:hover {
+    background-color: #0056b3;
+}
+
+#logInteractionForm input[type="checkbox"] {
+    width: auto;
+}
+
+/* Style for the Displayed Interactions */
+#interactions {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#interactions div {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#interactions div:last-child {
+    border-bottom: none;
+}
+
+#interactions strong {
+    display: block;
+    font-weight: bold;
+}
+
+#interactions hr {
+    margin-top: 10px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}

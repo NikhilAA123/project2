@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udaan B2B CRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Udaan B2B CRM</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Leads</h2>
+            <button id="fetchLeads">Fetch All Leads</button>
+            <div id="leads"></div>
+        </section>
+
+        <section>
+            <h2>Add New Lead</h2>
+            <form id="leadForm">
+                <input type="text" id="name" placeholder="Restaurant Name" required />
+                <input type="text" id="address" placeholder="Address" required />
+                <input type="text" id="contactNumber" placeholder="Contact Number" required />
+                <select id="status">
+                    <option value="New">New</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+                <input type="text" id="assignedKAM" placeholder="Assigned KAM" />
+                <button type="submit">Add Lead</button>
+            </form>
+        </section>
+        <section>
+  <!-- Form to Log Interaction -->
+  <form id="logInteractionForm">
+    <input type="datetime-local" id="interactionDate" required />
+    <input type="text" id="interactionType" placeholder="Type (Call, Visit, etc.)" required />
+    <textarea id="interactionNotes" placeholder="Notes" required></textarea>
+    <label>
+        <input type="checkbox" id="followUpRequired" /> Follow-Up Required
+    </label>
+    <button type="submit">Log Interaction</button>
+</form>
+
+        </section>
+
+        <section>
+            <h2>Recent Interactions</h2>
+            <button id="fetchInteractions">Fetch Today's Interactions</button>
+            <div id="interactions"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
